@@ -1,0 +1,32 @@
+﻿@using Snow_Vendors_UI.ViewModels;
+@model VendorListViewModel
+@{
+    //ViewBag.Title = "Index";
+}
+
+<h2>Vendors</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Vendor Code</th>
+                        <th>Vendor Name</th>
+                        <th>Valid From</th>
+                        <th>Valid Thru</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (VendorViewModel item in @Model.Vendors)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.VendorCode)</td>
+                            <td>@Html.DisplayFor(modelItem => item.VendorName)</td>
+                            <td>@Html.DisplayFor(modelItem => item.ValidFrom)</td>
+                            <td>@Html.DisplayFor(modelItem => item.ValidThru)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

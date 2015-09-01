@@ -1,0 +1,59 @@
+﻿@using Snow_Vendors_UI.ViewModels;
+@model VendorListViewModel
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Vendors List";
+}
+
+<h2>Vendors</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Vendor Code", "Index", new { sortOrder = "code" })
+        </th>
+        <th>
+            @Html.ActionLink("Vendor Name", "Index", new { sortOrder = "name" })
+        </th>
+        <th>
+            @Html.ActionLink("Valid From", "Index", new { sortOrder = "from" })
+        </th>
+        <th>
+            @Html.ActionLink("Valid Thru", "Index", new { sortOrder = "thru" })
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (VendorViewModel item in @Model.Vendors)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VendorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValidFrom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValidThru)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+
+        </td>
+    </tr>
+}
+
+</table>
+
+<br />

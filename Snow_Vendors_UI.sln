@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow_Vendors_UI", "Snow_Vendors_UI.csproj", "{43C8BF4A-C752-4AB0-AC70-50D22E060849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow_Vendors_Model", "..\Snow_Vendors_Model\Snow_Vendors_Model.csproj", "{859E26EE-893C-4A86-84EB-A0BEEB407690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snow_Vendors_API", "..\Snow_Vendors_API\Snow_Vendors_API.csproj", "{0B1F4C71-B696-4161-AB31-FD0E783409E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C8BF4A-C752-4AB0-AC70-50D22E060849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C8BF4A-C752-4AB0-AC70-50D22E060849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C8BF4A-C752-4AB0-AC70-50D22E060849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C8BF4A-C752-4AB0-AC70-50D22E060849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859E26EE-893C-4A86-84EB-A0BEEB407690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859E26EE-893C-4A86-84EB-A0BEEB407690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859E26EE-893C-4A86-84EB-A0BEEB407690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859E26EE-893C-4A86-84EB-A0BEEB407690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B1F4C71-B696-4161-AB31-FD0E783409E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1F4C71-B696-4161-AB31-FD0E783409E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1F4C71-B696-4161-AB31-FD0E783409E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1F4C71-B696-4161-AB31-FD0E783409E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
